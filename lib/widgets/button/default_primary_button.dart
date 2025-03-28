@@ -33,6 +33,7 @@ class DefaultPrimaryButton extends StatelessWidget {
       width: double.maxFinite,
       child: ElevatedButton(
         onPressed: enabled ? () {
+          FocusManager.instance.primaryFocus?.unfocus();
           HapticFeedback.mediumImpact();
           onClick();
         } : null,

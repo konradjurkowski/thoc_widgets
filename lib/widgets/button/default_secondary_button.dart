@@ -33,6 +33,7 @@ class DefaultSecondaryButton extends StatelessWidget {
       width: double.maxFinite,
       child: OutlinedButton(
         onPressed: enabled ? () {
+          FocusManager.instance.primaryFocus?.unfocus();
           HapticFeedback.mediumImpact();
           onClick();
         } : null,
