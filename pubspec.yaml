@@ -1,7 +1,7 @@
 name: thoc_widgets
 description: "THOC library with default widgets."
 version: 0.0.1
-homepage:
+homepage: "https://github.com/konradjurkowski/thoc_widgets.git"
 
 environment:
   sdk: ^3.7.2
