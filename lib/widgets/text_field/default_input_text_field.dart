@@ -4,9 +4,8 @@ import 'package:thoc_widgets/utils/helpers.dart';
 import 'package:thoc_widgets/utils/widgets_dimens.dart';
 import 'package:thoc_widgets/widgets/icon/svg_icon.dart';
 
-class InputTextField extends StatelessWidget {
-
-  const InputTextField({
+class DefaultInputTextField extends StatelessWidget {
+  const DefaultInputTextField({
     this.controller,
     this.focusNode,
     this.hintText,

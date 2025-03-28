@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:thoc_widgets/utils/helpers.dart';
 import 'package:thoc_widgets/utils/widgets_dimens.dart';
 
-class AppProgressBar extends StatelessWidget {
-  const AppProgressBar({
+class DefaultAppProgressBar extends StatelessWidget {
+  const DefaultAppProgressBar({
     this.size = WidgetsDimens.progressBarSize,
     this.color,
     super.key,

@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:thoc_widgets/utils/helpers.dart';
 import 'package:thoc_widgets/utils/widgets_dimens.dart';
-import 'package:thoc_widgets/widgets/loading/app_progress_bar.dart';
+import 'package:thoc_widgets/widgets/loading/default_app_progress_bar.dart';
 
-class PrimaryButton extends StatelessWidget {
-  const PrimaryButton({
+class DefaultSecondaryButton extends StatelessWidget {
+  const DefaultSecondaryButton({
     required this.text,
     this.enabled = true,
     this.loading = false,
@@ -31,12 +31,12 @@ class PrimaryButton extends StatelessWidget {
     return SizedBox(
       height: WidgetsDimens.defaultButtonHeight,
       width: double.maxFinite,
-      child: ElevatedButton(
+      child: OutlinedButton(
         onPressed: enabled ? () {
           HapticFeedback.mediumImpact();
           onClick();
         } : null,
-        style: ElevatedButton.styleFrom(
+        style: OutlinedButton.styleFrom(
           padding: EdgeInsets.symmetric(
             horizontal: horizontalPadding,
             vertical: verticalPadding,
@@ -51,7 +51,7 @@ class PrimaryButton extends StatelessWidget {
         ),
         child:
             loading
-                ? AppProgressBar(
+                ? DefaultAppProgressBar(
                   size: WidgetsDimens.buttonProgressBarSize,
                   color: foregroundColor ?? context.colors.primary,
                 )

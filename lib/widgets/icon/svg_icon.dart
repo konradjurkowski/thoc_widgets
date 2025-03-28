@@ -3,7 +3,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:thoc_widgets/utils/widgets_dimens.dart';
 
 class SvgIcon extends StatelessWidget {
-
   const SvgIcon({
     required this.iconPath,
     this.size = WidgetsDimens.icon24,
