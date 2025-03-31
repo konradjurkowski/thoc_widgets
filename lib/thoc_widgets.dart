@@ -3,6 +3,7 @@ export 'utils/constants.dart';
 export 'utils/widgets_dimens.dart';
 export 'widgets/loading/default_app_progress_bar.dart';
 export 'widgets/other/focus_scaffold.dart';
+export 'widgets/other/spacers.dart';
 export 'widgets/text_field/default_input_text_field.dart';
 export 'widgets/text_field/default_text_field_label.dart';
 export 'widgets/text_field/default_invalid_field_message.dart';
