@@ -28,7 +28,6 @@ class SvgIcon extends StatelessWidget {
         fit: boxFit,
         colorFilter: tint != null ? ColorFilter.mode(tint!, BlendMode.srcIn) : null,
       ),
-      // child: SvgPicture.asset(),
     );
   }
 }
