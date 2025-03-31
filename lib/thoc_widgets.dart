@@ -10,3 +10,4 @@ export 'widgets/text_field/default_invalid_field_message.dart';
 export 'widgets/button/default_primary_button.dart';
 export 'widgets/button/default_secondary_button.dart';
 export 'widgets/icon/svg_icon.dart';
+export 'widgets/top_bar/default_top_bar.dart';
