@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:thoc_widgets/utils/helpers.dart';
 import 'package:thoc_widgets/utils/widgets_dimens.dart';
-import 'package:thoc_widgets/widgets/icon/svg_icon.dart';
 
 class DefaultInputTextField extends StatelessWidget {
   const DefaultInputTextField({
@@ -37,7 +36,7 @@ class DefaultInputTextField extends StatelessWidget {
   final TextEditingController? controller;
   final FocusNode? focusNode;
   final String? hintText;
-  final String? suffixIcon;
+  final IconData? suffixIcon;
   final VoidCallback? onSuffixIconClick;
   final bool obscureText;
   final bool autofocus;
@@ -110,9 +109,9 @@ class DefaultInputTextField extends StatelessWidget {
                     HapticFeedback.mediumImpact();
                     onSuffixIconClick?.call();
                   },
-                  child: SvgIcon(
-                    iconPath: suffixIcon!,
-                    tint: foregroundColor ?? context.colors.onBackground.withValues(alpha: 0.5),
+                  child: Icon(
+                    suffixIcon!,
+                    color: foregroundColor ?? context.colors.onBackground.withValues(alpha: 0.5),
                   ),
                 ),
               )
