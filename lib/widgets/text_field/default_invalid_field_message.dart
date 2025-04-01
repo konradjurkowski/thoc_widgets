@@ -31,7 +31,7 @@ class DefaultInvalidFieldMessage extends StatelessWidget {
                 padding: const EdgeInsets.only(top: WidgetsDimens.padding8),
                 child: Text(
                   errorMessage!,
-                  style: context.textTheme.labelSmall?.copyWith(
+                  style: context.typography.labelSmall?.copyWith(
                     color: context.colors.error,
                   ),
                 ),

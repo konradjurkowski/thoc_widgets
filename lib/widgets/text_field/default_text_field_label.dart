@@ -12,7 +12,7 @@ class DefaultTextFieldLabel extends StatelessWidget {
       text,
       maxLines: 1,
       overflow: TextOverflow.ellipsis,
-      style: context.textTheme.bodyMedium,
+      style: context.typography.bodyMedium,
     );
   }
 }

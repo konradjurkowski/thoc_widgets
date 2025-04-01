@@ -87,11 +87,11 @@ class DefaultInputTextField extends StatelessWidget {
       autocorrect: autocorrect,
       maxLines: maxLines,
       textInputAction: textInputAction,
-      style: style ?? context.textTheme.bodyLarge
+      style: style ?? context.typography.bodyLarge
           ?.copyWith(color: foregroundColor ?? context.colors.onBackground),
       decoration: InputDecoration(
         hintText: hintText,
-        hintStyle: context.textTheme.bodyLarge
+        hintStyle: context.typography.bodyLarge
             ?.copyWith(color: hintColor ?? context.colors.onBackground.withValues(alpha: 0.5)),
         isDense: isDense,
         contentPadding: contentPadding,

@@ -58,7 +58,7 @@ class DefaultPrimaryButton extends StatelessWidget {
                 )
                 : Text(
                   text,
-                  style: context.textTheme.bodyLarge?.copyWith(
+                  style: context.typography.bodyLarge?.copyWith(
                     color: foregroundColor ?? context.colors.onPrimary,
                     fontWeight: FontWeight.w600,
                   ),

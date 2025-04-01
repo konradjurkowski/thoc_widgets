@@ -31,7 +31,7 @@ class DefaultTopBar extends StatelessWidget implements PreferredSizeWidget {
           : null,
       title: Text(
         title,
-        style: context.textTheme.headlineSmall?.copyWith(
+        style: context.typography.headlineSmall?.copyWith(
           fontWeight: FontWeight.bold,
         ),
       ),
