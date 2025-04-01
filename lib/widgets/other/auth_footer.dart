@@ -1,7 +1,8 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:thoc_widgets/thoc_widgets.dart';
+import 'package:thoc_widgets/utils/helpers.dart';
+import 'package:thoc_widgets/utils/widgets_dimens.dart';
 
 class AuthFooter extends StatelessWidget {
   const AuthFooter({

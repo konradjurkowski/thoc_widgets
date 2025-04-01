@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:thoc_widgets/thoc_widgets.dart';
+import 'package:thoc_widgets/utils/helpers.dart';
 
 class ClickableText extends StatelessWidget {
   const ClickableText({
