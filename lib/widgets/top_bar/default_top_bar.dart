@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:thoc_widgets/utils/helpers.dart';
+import 'package:thoc_widgets/utils/widgets_dimens.dart';
 
 class DefaultTopBar extends StatelessWidget implements PreferredSizeWidget {
   const DefaultTopBar({
@@ -24,7 +25,7 @@ class DefaultTopBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       centerTitle: false,
       automaticallyImplyLeading: false,
-      titleSpacing: 0,
+      titleSpacing: onLeadingClick != null ? 0 : WidgetsDimens.padding16,
       backgroundColor: context.colors.background,
       leading: onLeadingClick != null
           ? _NavigateBackArrow(onClick: onLeadingClick!, icon: leadingIcon)

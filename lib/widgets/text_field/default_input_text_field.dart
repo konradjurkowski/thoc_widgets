@@ -92,7 +92,7 @@ class DefaultInputTextField extends StatelessWidget {
       decoration: InputDecoration(
         hintText: hintText,
         hintStyle: context.typography.bodyLarge
-            ?.copyWith(color: hintColor ?? context.colors.onBackground.withValues(alpha: 0.5)),
+            ?.copyWith(color: hintColor ?? context.colors.onBackground.withOpacity(0.5)),
         isDense: isDense,
         contentPadding: contentPadding,
         border: inputBorder,
@@ -111,7 +111,7 @@ class DefaultInputTextField extends StatelessWidget {
                   },
                   child: Icon(
                     suffixIcon!,
-                    color: foregroundColor ?? context.colors.onBackground.withValues(alpha: 0.5),
+                    color: foregroundColor ?? context.colors.onBackground.withOpacity(0.5),
                   ),
                 ),
               )
