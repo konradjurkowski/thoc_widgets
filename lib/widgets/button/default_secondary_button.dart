@@ -54,7 +54,7 @@ class DefaultSecondaryButton extends StatelessWidget {
             loading
                 ? DefaultAppProgressBar(
                   size: WidgetsDimens.buttonProgressBarSize,
-                  color: foregroundColor ?? context.colors.primary,
+                  color: foregroundColor ?? context.colors.onPrimary,
                 )
                 : Text(
                   text,
