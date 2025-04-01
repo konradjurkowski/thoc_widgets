@@ -68,7 +68,7 @@ class DefaultInputTextField extends StatelessWidget {
     
     final focusedInputBorder = OutlineInputBorder(
       borderRadius: BorderRadius.circular(WidgetsDimens.radius4),
-      borderSide: BorderSide(color: borderColor ?? context.colors.outline),
+      borderSide: BorderSide(color: borderColor ?? context.colors.onBackground.withValues(alpha: 0.5)),
     );
 
     return TextFormField(
@@ -111,7 +111,7 @@ class DefaultInputTextField extends StatelessWidget {
                   },
                   child: Icon(
                     suffixIcon!,
-                    color: foregroundColor ?? context.colors.onBackground.withValues(alpha: 0.5),
+                    color: foregroundColor ?? context.colors.primary,
                   ),
                 ),
               )
