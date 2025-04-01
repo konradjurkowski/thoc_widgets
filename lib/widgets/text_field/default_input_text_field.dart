@@ -92,7 +92,7 @@ class DefaultInputTextField extends StatelessWidget {
       decoration: InputDecoration(
         hintText: hintText,
         hintStyle: context.typography.bodyLarge
-            ?.copyWith(color: hintColor ?? context.colors.onBackground.withOpacity(0.5)),
+            ?.copyWith(color: hintColor ?? context.colors.onBackground.withValues(alpha: 0.5)),
         isDense: isDense,
         contentPadding: contentPadding,
         border: inputBorder,
@@ -100,7 +100,7 @@ class DefaultInputTextField extends StatelessWidget {
         enabledBorder: inputBorder,
         disabledBorder: inputBorder,
         filled: true,
-        fillColor: fillColor ?? context.colors.onBackground,
+        fillColor: fillColor ?? context.colors.onBackground.withValues(alpha: 0.2),
         suffixIcon: suffixIcon != null
             ? Padding(
                 padding: const EdgeInsets.symmetric(horizontal: WidgetsDimens.padding16),
@@ -111,7 +111,7 @@ class DefaultInputTextField extends StatelessWidget {
                   },
                   child: Icon(
                     suffixIcon!,
-                    color: foregroundColor ?? context.colors.onBackground.withOpacity(0.5),
+                    color: foregroundColor ?? context.colors.onBackground.withValues(alpha: 0.5),
                   ),
                 ),
               )
