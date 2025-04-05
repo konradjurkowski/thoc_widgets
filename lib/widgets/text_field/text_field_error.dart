@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:thoc_widgets/utils/helpers.dart';
 import 'package:thoc_widgets/utils/widgets_dimens.dart';
 
-class DefaultInvalidFieldMessage extends StatelessWidget {
-  const DefaultInvalidFieldMessage({this.errorMessage, super.key});
+class TextFieldError extends StatelessWidget {
+  const TextFieldError({this.errorMessage, super.key});
 
   final String? errorMessage;
 
@@ -23,19 +23,17 @@ class DefaultInvalidFieldMessage extends StatelessWidget {
           ),
         );
       },
-      child:
-          errorMessage == null
-              ? const SizedBox.shrink()
-              : Padding(
-                key: ValueKey(errorMessage),
-                padding: const EdgeInsets.only(top: WidgetsDimens.padding8),
-                child: Text(
-                  errorMessage!,
-                  style: context.typography.labelSmall?.copyWith(
-                    color: context.colors.error,
-                  ),
-                ),
+      child: errorMessage == null
+          ? const SizedBox.shrink()
+          : Padding(
+              key: ValueKey(errorMessage),
+              padding: const EdgeInsets.only(top: WidgetsDimens.padding8),
+              child: Text(
+                errorMessage!,
+                style: context.typography.bodySmall
+                    ?.copyWith(color: context.colors.error),
               ),
+            ),
     );
   }
 }

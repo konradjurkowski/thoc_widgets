@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:thoc_widgets/utils/helpers.dart';
 
-class DefaultTextFieldLabel extends StatelessWidget {
-  const DefaultTextFieldLabel({required this.text, super.key});
+class TextFieldLabel extends StatelessWidget {
+  const TextFieldLabel({required this.text, super.key});
 
   final String text;
 
