@@ -5,8 +5,10 @@ class WidgetsDimens {
   static const padding4 = 4.0;
   static const padding8 = 8.0;
   static const padding10 = 10.0;
+  static const padding12 = 12.0;
   static const padding16 = 16.0;
   static const padding18 = 18.0;
+  static const padding22 = 22.0;
   static const padding24 = 24.0;
   static const padding32 = 32.0;
 
